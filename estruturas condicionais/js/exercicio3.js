@@ -52,3 +52,30 @@ if (senha === 1234 ) {
 
 }
 
+function classificarIdade() {
+    
+    let idade = parseFloat(prompt("Digite a sua idade"));
+
+    if (idade < 12) {
+        alert("Criança");
+    } else if (idade < 17) {
+        alert("Adolescente");
+    } else if (idade < 59) {
+        alert("Adulto");
+    } else {
+        alert("Idoso")
+    }
+}
+
+function positivoNegativo() {
+
+    let numero = parseFloat(prompt("Digite um número"));
+
+    if (numero > 0) {
+        alert("Positivo");
+    } else if (numero < 0) {
+        alert("Negativo")
+    } else {
+        alert("Zero")
+    }
+}
