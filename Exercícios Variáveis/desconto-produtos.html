@@ -7,15 +7,9 @@
 </head>
 <body>
 
-    <script>
-        let preco = parseFloat(prompt("Digite o preço do produto").replace("." , ","));
-        let desconto = parseFloat(prompt("Digite a porcentagem de desconto ").replace("." , ","));
+    <script src="../Exercícios Variáveis/js/exercicio1.js"></script>
 
-        let valorDesconto = preco * (desconto / 100);
-        let valorFinal = preco - valorDesconto;
-
-        console.log("O valor final com desconto é R$ " + valorFinal);
-    </script>
+    <button onclick="descontoProduto()">Ver produto</button>
     
 </body>
 </html>
