@@ -55,4 +55,91 @@ function solicitarNumeros() {
 
 }
 
+function solicitarQuatroNumeoros() {
+
+    let numero1 = parseFloat(prompt("Digite um número").replace(",","."));
+    let numero2 = parseFloat(prompt("Digite um número").replace(",", "."));
+    let numero3 = parseFloat(prompt("Digite um número").replace(",","."));
+    let numero4 = parseFloat(prompt("Digite um número").replace(",","."));
+  
+    if (numero1 === numero2 && numero3 === numero4 && numero1 === numero4){
+        alert("é um quadrado");
+    } else {
+        alert("não é um quadrado");
+    }
+
+}
+
+function verificarRetangulo() {
+
+    let numero1 = parseFloat(prompt("Digite um numero").replace(",","."));
+    let numero2 = parseFloat(prompt("Digite um numero").replace(",","."));
+    let numero3 = parseFloat(prompt("Digite um numero").replace(",","."));
+    let numero4 = parseFloat(prompt("Digite um numero").replace(",","."));
+
+    if (numero1 === numero2 && numero3 === numero4 && numero1 != numero4 || numero1 === numero3 && numero2 === numero4 && numero3 != numero2 || numero1 === numero4 && numero2 === numero3 && numero4 != numero2){
+        alert("é um retangulo");
+    } else {
+        alert("não é retangulo");
+    }
+    
+}
+
+function ordemCrescente() {
+    let numero1 = parseFloat(prompt("Digite um número").replace("," , "."));
+    let numero2 = parseFloat(prompt("Digite um número").replace("," , "."));
+    let numero3 = parseFloat(prompt("Digite um número").replace("," , "."));
+
+    if (numero1 <= numero2 && numero2 <= numero3) {
+        alert(numero1 + 
+            "\n" + numero2 + 
+            "\n" + numero3
+        )
+    } else if (numero1 <= numero3 && numero3  <= numero2) {
+        alert(numero1 +
+            "\n" + numero3 +
+            "\n" + numero2
+         );
+    } else if ( numero2 <= numero1 && numero1 <= numero3) {
+        alert(numero2 +
+            "\n" + numero1 +
+            "\n" + numero3
+        );
+    } else if (numero2 <= numero3 && numero3 <= numero1) {
+        alert(numero2 +
+            "\n" + numero3 +
+            "n" + numero1
+        );
+    } else if (numero3 <= numero1 && numero1 <= numero2) {
+        alert(numero3 +
+            "\n" + numero1 +
+            "\n" + numero2
+        );
+    } else if (numero3 <= numero2 && numero2 <= numero1) {
+        alert(numero3 +
+            "\n" + numero2 +
+            "\n" + numero1
+        );
+    }
+}
+
+
+function anoNascimento() {
+    let ano = prompt("Digite um ano de nascimento").trim();
+    let partesAno = ano.split("");
+    let milhar = parseInt(ano[0]);
+    let centena = parseInt(ano[1]);
+    let dezena = parseInt(ano[2]);
+    let unidade = parseInt(ano[3]);
+    let milharString,centenaString,dezenaString,UnidadeString;
+
+    if (milhar === 1) {
+        milharString = "mil, " 
+    } else if (milhar === 2) {
+        milharString = "dois mil, "
+    } else if (milhar === 3) {
+        milharString = "tres mil, "
+    } else if (milhar )
+}
+
 
